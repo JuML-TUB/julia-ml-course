@@ -122,7 +122,7 @@ Attendance is mandatory on the following dates:
 
 The date of the final examination will be determined on a group-by-group basis.
 
-More information can be found on [ISIS](https://isis.tu-berlin.de/course/view.php?id=40973).
+More information can be found on [ISIS](https://isis.tu-berlin.de/).
 
 ## FAQ
 #### Why should I learn Julia?
