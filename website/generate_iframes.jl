@@ -3,7 +3,7 @@ using Dates
 const julia_shield = "https://img.shields.io/badge/edit-Julia%20source%20code-beige"
 const pluto_shield = "https://img.shields.io/badge/view-Standalone%20Notebook-beige"
 const issue_shield = "https://img.shields.io/badge/open-GitHub%20issue-beige"
-const issue_url = "https://github.com/adrhill/julia-ml-course/issues"
+const issue_url = "https://github.com/juml-tub/julia-ml-course/issues"
 
 function generate_iframes(d::Date=today())
     dir = @__DIR__ # expected to be /website
@@ -13,8 +13,8 @@ function generate_iframes(d::Date=today())
 
     for filename in lectures
         outpath = joinpath(dir, replace(filename, ".jl" => ".md"))
-        julia_url = "https://github.com/adrhill/julia-ml-course/tree/main/lectures/$(filename)"
-        pluto_url = "https://adrhill.github.io/julia-ml-course/lectures/$(replace(filename, ".jl" => ".html"))"
+        julia_url = "https://github.com/juml-tub/julia-ml-course/tree/main/lectures/$(filename)"
+        pluto_url = "https://juml-tub.github.io/julia-ml-course/lectures/$(replace(filename, ".jl" => ".html"))"
 
         open(outpath, "w") do io
             write(
@@ -50,8 +50,8 @@ function generate_iframes(d::Date=today())
 
     for filename in homework
         outpath = joinpath(dir, replace(filename, ".jl" => ".md"))
-        julia_url = "https://github.com/adrhill/julia-ml-course/tree/main/homework/$(filename)"
-        pluto_url = "https://adrhill.github.io/julia-ml-course/homework/$(replace(filename, ".jl" => ".html"))"
+        julia_url = "https://github.com/juml-tub/julia-ml-course/tree/main/homework/$(filename)"
+        pluto_url = "https://juml-tub.github.io/julia-ml-course/homework/$(replace(filename, ".jl" => ".html"))"
 
         open(outpath, "w") do io
             write(

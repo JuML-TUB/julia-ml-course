@@ -1,5 +1,5 @@
 <div align="center">
-  <a href="https://adrhill.github.io/julia-ml-course/">
+  <a href="https://juml-tub.github.io/julia-ml-course/">
     <img
       src="website/_assets/logo/logo.svg"
       alt="JuML Logo"
@@ -23,7 +23,7 @@
 Course material and website for the [Julia for Machine Learning][site-url] course (JuML) at the [TU Berlin Machine Learning group][ml-group-url].
 
 ## Installation
-Follow the [installation instructions](https://adrhill.github.io/julia-ml-course/E1_Installation/)
+Follow the [installation instructions](https://juml-tub.github.io/julia-ml-course/E1_Installation/)
 on the course website.
 
 ## Contents
@@ -93,7 +93,7 @@ learning best practices for package development in Julia, such as:
 During code review sessions, students give each other feedback on their projects 
 before presenting their work in end-of-semester presentations.
 
-[site-url]: https://adrhill.github.io/julia-ml-course/
+[site-url]: https://juml-tub.github.io/julia-ml-course/
 [ml-group-url]: https://web.ml.tu-berlin.de
 [isis-url]: https://isis.tu-berlin.de/course/view.php?id=44767
 

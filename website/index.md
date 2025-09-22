@@ -144,7 +144,7 @@ Alternatively, you can open the notebook on Binder by clicking *"Edit or run thi
 However, Binder can take a prohibitively long time to load. 
 Pluto notebooks show an estimate of the loading times above the *"Run in Binder"* button.
 
-If you are familiar with Git, you can also clone the [GitHub repository of this course](https://github.com/adrhill/julia-ml-course/).
+If you are familiar with Git, you can also clone the [GitHub repository of this course](https://github.com/juml-tub/julia-ml-course/).
 You can then open your local copy of the lectures and homework in Pluto.
 Just make sure to regularly pull to keep your copy of the course up to date.
 
