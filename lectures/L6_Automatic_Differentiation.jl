@@ -1258,7 +1258,7 @@ test_differentiation(
 
 # ╔═╡ 65181eeb-f72c-47b2-9260-f6cf1de4760f
 md"In this example, all tests passed, which is also the reason we were able to benchmark all backends.
-You will learn more on [package testing](https://adrianhill.de/julia-ml-course/test/) during your project work.
+You will learn more on [package testing](https://juml-tub.github.io/julia-ml-course/test/) during your project work.
 "
 
 # ╔═╡ ce2d9ef5-3835-4871-8744-18293c772133

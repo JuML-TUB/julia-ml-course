@@ -17,7 +17,7 @@ generate_rss = false
 prepath = "julia-ml-course"
 website_title = "Julia for Machine Learning"
 website_descr = "Julia for Machine Learning course at TU Berlin"
-website_url   = "https://adrhill.github.io/julia-ml-course/"
+website_url   = "https://juml-tub.github.io/julia-ml-course/"
 +++
 
 <!--
