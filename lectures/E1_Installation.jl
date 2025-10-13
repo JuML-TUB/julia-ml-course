@@ -75,7 +75,7 @@ juliaup default 1.11
 
 # ╔═╡ 3133b51c-c1c0-43d3-8938-1179e9466e44
 tip(
-    md"If these options don't work out for you, you can also [manually download Julia 1.11](https://julialang.org/downloads/).",
+    md"If these options don't work out for you, you can also [manually download Julia](https://julialang.org/downloads/).",
 )
 
 # ╔═╡ a619a607-aeb6-4ca1-b380-4cd41c8e6768
