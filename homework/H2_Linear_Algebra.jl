@@ -616,7 +616,7 @@ task(
     md"Implement Kernel Ridge Regression in the function `kernel_ridge` below.
 
 ##### Step 1
-Inside the function `kernel_ridge`, construct the training kernel matrix $K_{XX}$ using the function `kernel`. Add a regularization term $\lambda I$, where where $I$ is the identity matrix and $\lambda \in \mathbb{R}$ is a regularization term:
+Inside the function `kernel_ridge`, construct the training kernel matrix $K_{XX}$ like how you did in Exercise 3.2. Add a regularization term $\lambda I$, where where $I$ is the identity matrix and $\lambda \in \mathbb{R}$ is a regularization term:
 
 $\tilde{K}_{XX} = K_{XX} + \lambda I$
 
