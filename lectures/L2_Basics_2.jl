@@ -361,7 +361,7 @@ A1 = [[1 2; 3 4];;;; [5 6; 7 8]] # concatenate two 2x2 matrices in the fourth di
 
 # ╔═╡ 38b55332-0340-4fba-87f4-f7b7c2f9cbe2
 md"""### Concatenation & reshaping
-An much easier way is to use `cat` to con*cat*enate arrays
+A much easier way is to use `cat` to con*cat*enate arrays
 """
 
 # ╔═╡ 14c1da48-e07c-43bd-b8f4-eb393ddbd9b5
