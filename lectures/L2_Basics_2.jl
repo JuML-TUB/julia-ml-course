@@ -527,12 +527,11 @@ SA = sparse([1, 3, 2, 2], [2, 8, 4, 6], [2, 3, 4, 5]) # rows, columns, values
 # ╔═╡ c30ff6f2-b034-4d3a-85db-6a6052bab764
 md" Thinking of the inputs as a table can be helpful:
 
-| Entry | Row | Column | Value |
-|:-----:|:---:|:------:|:-----:|
-| 1     | 1   | 2      | 2     |
-| 2     | 3   | 8      | 3     |
-| 3     | 2   | 4      | 4     |
-| 4     | 2   | 6      | 5     |
+| Entry  | 1   | 2   | 3   | 4 	 | 
+|:------:|:---:|:---:|:---:|:---:|
+| Row    | 1   | 3   | 2   | 2 	 |
+| Column | 2   | 8   | 4   | 6 	 |
+| Value  | 2   | 3   | 4   | 5   |
 "
 
 # ╔═╡ 22929fda-ddc7-4c1e-bc30-b6f6c30c2e3a
