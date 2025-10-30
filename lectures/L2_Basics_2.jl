@@ -361,7 +361,7 @@ A1 = [[1 2; 3 4];;;; [5 6; 7 8]] # concatenate two 2x2 matrices in the fourth di
 
 # ╔═╡ 38b55332-0340-4fba-87f4-f7b7c2f9cbe2
 md"""### Concatenation & reshaping
-An much easier way is to use `cat` to con*cat*enate arrays
+A much easier way is to use `cat` to con*cat*enate arrays
 """
 
 # ╔═╡ 14c1da48-e07c-43bd-b8f4-eb393ddbd9b5
@@ -527,12 +527,11 @@ SA = sparse([1, 3, 2, 2], [2, 8, 4, 6], [2, 3, 4, 5]) # rows, columns, values
 # ╔═╡ c30ff6f2-b034-4d3a-85db-6a6052bab764
 md" Thinking of the inputs as a table can be helpful:
 
-| Entry | Row | Column | Value |
-|:-----:|:---:|:------:|:-----:|
-| 1     | 1   | 2      | 2     |
-| 2     | 3   | 8      | 3     |
-| 3     | 2   | 4      | 4     |
-| 4     | 2   | 6      | 5     |
+| Entry  | 1   | 2   | 3   | 4 	 | 
+|:------:|:---:|:---:|:---:|:---:|
+| Row    | 1   | 3   | 2   | 2 	 |
+| Column | 2   | 8   | 4   | 6 	 |
+| Value  | 2   | 3   | 4   | 5   |
 "
 
 # ╔═╡ 22929fda-ddc7-4c1e-bc30-b6f6c30c2e3a
