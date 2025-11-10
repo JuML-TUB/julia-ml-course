@@ -697,7 +697,7 @@ Markdown.MD(
 
 # ╔═╡ edb7814a-eddf-4c87-8857-19bb0a0c0241
 md"""# Feedback
-This is the fourth iteration of the *"Julia for Machine Learning"* class. Please help us make the course better!
+Please help us improve the course by giving us feedback!
 
 You can write whatever you want in the following string. Feel free to add or delete whatever you want.
 """

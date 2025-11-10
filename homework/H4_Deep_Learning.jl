@@ -422,7 +422,7 @@ gradient(f, -1)
 
 # ╔═╡ 68ad8a8f-8d0a-49d4-b79e-53491ecffc01
 md"""# Feedback
-This is the fourth iteration of the *"Julia for Machine Learning"* class. Please help us make the course better!
+Please help us improve the course by giving us feedback!
 
 You can write whatever you want in the following string. Feel free to add or delete whatever you want.
 """
