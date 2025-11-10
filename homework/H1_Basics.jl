@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.5
+# v0.20.20
 
 using Markdown
 using InteractiveUtils
@@ -729,17 +729,17 @@ PlutoTeachingTools = "661c6b06-c737-4d37-b85c-46df65de6f69"
 PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
-PlutoTeachingTools = "~0.3.1"
-PlutoUI = "~0.7.62"
+PlutoTeachingTools = "~0.4.6"
+PlutoUI = "~0.7.73"
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000002
 PLUTO_MANIFEST_TOML_CONTENTS = """
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.11.4"
+julia_version = "1.11.7"
 manifest_format = "2.0"
-project_hash = "65874a65b39702642b8f819a8904f6c2925e64f2"
+project_hash = "3df8e11eeecf8fc4b8c1802c76a48454e4665475"
 
 [[deps.AbstractPlutoDingetjes]]
 deps = ["Pkg"]
@@ -759,17 +759,17 @@ version = "1.11.0"
 uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 version = "1.11.0"
 
-[[deps.CodeTracking]]
-deps = ["InteractiveUtils", "UUIDs"]
-git-tree-sha1 = "7eee164f122511d3e4e1ebadb7956939ea7e1c77"
-uuid = "da1fd8a2-8d9e-5ec2-8556-3022fb5608a2"
-version = "1.3.6"
-
 [[deps.ColorTypes]]
 deps = ["FixedPointNumbers", "Random"]
-git-tree-sha1 = "b10d0b65641d57b8b4d5e234446582de5047050d"
+git-tree-sha1 = "67e11ee83a43eb71ddc950302c53bf33f0690dfe"
 uuid = "3da002f7-5984-5a60-b8a6-cbb66c0b333f"
-version = "0.11.5"
+version = "0.12.1"
+
+    [deps.ColorTypes.extensions]
+    StyledStringsExt = "StyledStrings"
+
+    [deps.ColorTypes.weakdeps]
+    StyledStrings = "f489334b-da3d-4c2e-b8f0-e476e12c162b"
 
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -801,6 +801,12 @@ git-tree-sha1 = "9c68794ef81b08086aeb32eeaf33531668d5f5fc"
 uuid = "1fa38f19-a742-5d3f-a2b9-30dd87b9d5f8"
 version = "1.3.7"
 
+[[deps.Ghostscript_jll]]
+deps = ["Artifacts", "JLLWrappers", "JpegTurbo_jll", "Libdl", "Zlib_jll"]
+git-tree-sha1 = "38044a04637976140074d0b0621c1edf0eb531fd"
+uuid = "61579ee1-b43e-5ca0-a5da-69d92c66a64b"
+version = "9.55.1+0"
+
 [[deps.Hyperscript]]
 deps = ["Test"]
 git-tree-sha1 = "179267cfa5e712760cd43dcae385d7ea90cc25a4"
@@ -815,14 +821,20 @@ version = "0.9.5"
 
 [[deps.IOCapture]]
 deps = ["Logging", "Random"]
-git-tree-sha1 = "b6d6bfdd7ce25b0f9b2f6b3dd56b2673a66c8770"
+git-tree-sha1 = "0ee181ec08df7d7c911901ea38baf16f755114dc"
 uuid = "b5f81e59-6552-4d32-b1f0-c071b021bf89"
-version = "0.2.5"
+version = "1.0.0"
 
 [[deps.InteractiveUtils]]
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 version = "1.11.0"
+
+[[deps.JLLWrappers]]
+deps = ["Artifacts", "Preferences"]
+git-tree-sha1 = "0533e564aae234aff59ab625543145446d8b6ec2"
+uuid = "692b3bcd-3c85-4b1f-b108-f13ce0eb3210"
+version = "1.7.1"
 
 [[deps.JSON]]
 deps = ["Dates", "Mmap", "Parsers", "Unicode"]
@@ -830,11 +842,11 @@ git-tree-sha1 = "31e996f0a15c7b280ba9f76636b3ff9e2ae58c9a"
 uuid = "682c06a0-de6a-54ab-a142-c8b1cf79cde6"
 version = "0.21.4"
 
-[[deps.JuliaInterpreter]]
-deps = ["CodeTracking", "InteractiveUtils", "Random", "UUIDs"]
-git-tree-sha1 = "a434e811d10e7cbf4f0674285542e697dca605d0"
-uuid = "aa1ae85d-cabe-5617-a682-6adf51b2e16a"
-version = "0.9.42"
+[[deps.JpegTurbo_jll]]
+deps = ["Artifacts", "JLLWrappers", "Libdl"]
+git-tree-sha1 = "4255f0032eafd6451d707a51d5f0248b8a165e4d"
+uuid = "aacddb02-875f-59d6-b918-886e6ef4fbf8"
+version = "3.1.3+0"
 
 [[deps.LaTeXStrings]]
 git-tree-sha1 = "dda21b8cbd6a6c40d9d02a73230f9d70fed6918c"
@@ -842,20 +854,22 @@ uuid = "b964fa9f-0449-5b57-a5c2-d3ea65f4040f"
 version = "1.4.0"
 
 [[deps.Latexify]]
-deps = ["Format", "InteractiveUtils", "LaTeXStrings", "MacroTools", "Markdown", "OrderedCollections", "Requires"]
-git-tree-sha1 = "cd714447457c660382fe634710fb56eb255ee42e"
+deps = ["Format", "Ghostscript_jll", "InteractiveUtils", "LaTeXStrings", "MacroTools", "Markdown", "OrderedCollections", "Requires"]
+git-tree-sha1 = "44f93c47f9cd6c7e431f2f2091fcba8f01cd7e8f"
 uuid = "23fbe1c1-3f47-55db-b15f-69d7ec21a316"
-version = "0.16.6"
+version = "0.16.10"
 
     [deps.Latexify.extensions]
     DataFramesExt = "DataFrames"
     SparseArraysExt = "SparseArrays"
     SymEngineExt = "SymEngine"
+    TectonicExt = "tectonic_jll"
 
     [deps.Latexify.weakdeps]
     DataFrames = "a93c6f00-e57d-5684-b7b6-d8193f3e46c0"
     SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
     SymEngine = "123dc426-2d89-5057-bbad-38513e3affd8"
+    tectonic_jll = "d7dd28d6-a5e6-559c-9131-7eb760cdacc5"
 
 [[deps.LibCURL]]
 deps = ["LibCURL_jll", "MozillaCACerts_jll"]
@@ -895,21 +909,15 @@ version = "1.11.0"
 uuid = "56ddb016-857b-54e1-b83d-db4d58db5568"
 version = "1.11.0"
 
-[[deps.LoweredCodeUtils]]
-deps = ["JuliaInterpreter"]
-git-tree-sha1 = "688d6d9e098109051ae33d126fcfc88c4ce4a021"
-uuid = "6f1432cf-f94c-5a45-995e-cdbf5db27b0b"
-version = "3.1.0"
-
 [[deps.MIMEs]]
 git-tree-sha1 = "c64d943587f7187e751162b3b84445bbbd79f691"
 uuid = "6c6e2e6c-3030-632d-7369-2d6c69616d65"
 version = "1.1.0"
 
 [[deps.MacroTools]]
-git-tree-sha1 = "72aebe0b5051e5143a079a4685a46da330a40472"
+git-tree-sha1 = "1e0228a030642014fe5cfe68c2c0a818f9e3f522"
 uuid = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
-version = "0.5.15"
+version = "0.5.16"
 
 [[deps.Markdown]]
 deps = ["Base64"]
@@ -939,48 +947,38 @@ uuid = "4536629a-c528-5b80-bd46-f80d51c5b363"
 version = "0.3.27+1"
 
 [[deps.OrderedCollections]]
-git-tree-sha1 = "cc4054e898b852042d7b503313f7ad03de99c3dd"
+git-tree-sha1 = "05868e21324cede2207c6f0f466b4bfef6d5e7ee"
 uuid = "bac558e1-5e72-5ebc-8fee-abe8a469f55d"
-version = "1.8.0"
+version = "1.8.1"
 
 [[deps.Parsers]]
 deps = ["Dates", "PrecompileTools", "UUIDs"]
-git-tree-sha1 = "8489905bcdbcfac64d1daa51ca07c0d8f0283821"
+git-tree-sha1 = "7d2f8f21da5db6a806faf7b9b292296da42b2810"
 uuid = "69de0a69-1ddd-5017-9359-2bf0b02dc9f0"
-version = "2.8.1"
+version = "2.8.3"
 
 [[deps.Pkg]]
 deps = ["Artifacts", "Dates", "Downloads", "FileWatching", "LibGit2", "Libdl", "Logging", "Markdown", "Printf", "Random", "SHA", "TOML", "Tar", "UUIDs", "p7zip_jll"]
 uuid = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
 version = "1.11.0"
-weakdeps = ["REPL"]
 
     [deps.Pkg.extensions]
     REPLExt = "REPL"
 
-[[deps.PlutoHooks]]
-deps = ["InteractiveUtils", "Markdown", "UUIDs"]
-git-tree-sha1 = "072cdf20c9b0507fdd977d7d246d90030609674b"
-uuid = "0ff47ea0-7a50-410d-8455-4348d5de0774"
-version = "0.0.5"
-
-[[deps.PlutoLinks]]
-deps = ["FileWatching", "InteractiveUtils", "Markdown", "PlutoHooks", "Revise", "UUIDs"]
-git-tree-sha1 = "8f5fa7056e6dcfb23ac5211de38e6c03f6367794"
-uuid = "0ff47ea0-7a50-410d-8455-4348d5de0420"
-version = "0.1.6"
+    [deps.Pkg.weakdeps]
+    REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 
 [[deps.PlutoTeachingTools]]
-deps = ["Downloads", "HypertextLiteral", "Latexify", "Markdown", "PlutoLinks", "PlutoUI"]
-git-tree-sha1 = "8252b5de1f81dc103eb0293523ddf917695adea1"
+deps = ["Downloads", "HypertextLiteral", "Latexify", "Markdown", "PlutoUI"]
+git-tree-sha1 = "dacc8be63916b078b592806acd13bb5e5137d7e9"
 uuid = "661c6b06-c737-4d37-b85c-46df65de6f69"
-version = "0.3.1"
+version = "0.4.6"
 
 [[deps.PlutoUI]]
-deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
-git-tree-sha1 = "d3de2694b52a01ce61a036f18ea9c0f61c4a9230"
+deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "Downloads", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
+git-tree-sha1 = "3faff84e6f97a7f18e0dd24373daa229fd358db5"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
-version = "0.7.62"
+version = "0.7.73"
 
 [[deps.PrecompileTools]]
 deps = ["Preferences"]
@@ -990,18 +988,13 @@ version = "1.2.1"
 
 [[deps.Preferences]]
 deps = ["TOML"]
-git-tree-sha1 = "9306f6085165d270f7e3db02af26a400d580f5c6"
+git-tree-sha1 = "0f27480397253da18fe2c12a4ba4eb9eb208bf3d"
 uuid = "21216c6a-2e73-6563-6e65-726566657250"
-version = "1.4.3"
+version = "1.5.0"
 
 [[deps.Printf]]
 deps = ["Unicode"]
 uuid = "de0858da-6303-5e67-8744-51eddeeeb8d7"
-version = "1.11.0"
-
-[[deps.REPL]]
-deps = ["InteractiveUtils", "Markdown", "Sockets", "StyledStrings", "Unicode"]
-uuid = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 version = "1.11.0"
 
 [[deps.Random]]
@@ -1020,28 +1013,12 @@ git-tree-sha1 = "62389eeff14780bfe55195b7204c0d8738436d64"
 uuid = "ae029012-a4dd-5104-9daa-d747884805df"
 version = "1.3.1"
 
-[[deps.Revise]]
-deps = ["CodeTracking", "FileWatching", "JuliaInterpreter", "LibGit2", "LoweredCodeUtils", "OrderedCollections", "REPL", "Requires", "UUIDs", "Unicode"]
-git-tree-sha1 = "5cf59106f9b47014c58c5053a1ce09c0a2e0333c"
-uuid = "295af30f-e4ad-537b-8983-00126c2a3abe"
-version = "3.7.3"
-
-    [deps.Revise.extensions]
-    DistributedExt = "Distributed"
-
-    [deps.Revise.weakdeps]
-    Distributed = "8ba89e20-285c-5b6f-9357-94700520ee1b"
-
 [[deps.SHA]]
 uuid = "ea8e919c-243c-51af-8825-aaa63cd721ce"
 version = "0.7.0"
 
 [[deps.Serialization]]
 uuid = "9e88b42a-f829-5b0c-bbe9-9e923198166b"
-version = "1.11.0"
-
-[[deps.Sockets]]
-uuid = "6462fe0b-24de-5631-8697-dd941f90decc"
 version = "1.11.0"
 
 [[deps.Statistics]]
@@ -1055,10 +1032,6 @@ version = "1.11.1"
 
     [deps.Statistics.weakdeps]
     SparseArrays = "2f01184e-e22b-5df5-ae63-d93ebab69eaf"
-
-[[deps.StyledStrings]]
-uuid = "f489334b-da3d-4c2e-b8f0-e476e12c162b"
-version = "1.11.0"
 
 [[deps.TOML]]
 deps = ["Dates"]
@@ -1076,14 +1049,14 @@ uuid = "8dfed614-e22c-5e08-85e1-65c5234f0b40"
 version = "1.11.0"
 
 [[deps.Tricks]]
-git-tree-sha1 = "6cae795a5a9313bbb4f60683f7263318fc7d1505"
+git-tree-sha1 = "311349fd1c93a31f783f977a71e8b062a57d4101"
 uuid = "410a4b4d-49e4-4fbc-ab6d-cb71b17b3775"
-version = "0.1.10"
+version = "0.1.13"
 
 [[deps.URIs]]
-git-tree-sha1 = "cbbebadbcc76c5ca1cc4b4f3b0614b3e603b5000"
+git-tree-sha1 = "bef26fb046d031353ef97a82e3fdb6afe7f21b1a"
 uuid = "5c2747f8-b7ea-4ff2-ba2e-563bfd36b1d4"
-version = "1.5.2"
+version = "1.6.1"
 
 [[deps.UUIDs]]
 deps = ["Random", "SHA"]
