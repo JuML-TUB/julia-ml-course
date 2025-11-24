@@ -64,17 +64,6 @@ git push -u origin main
 In your repository on GitHub, click on the `Settings > Access > Collaborators` and invite your group members to your repository.
 This will give them permission to modify the repository and merge pull requests.
 
-### Setting up Documenter.jl
-
-The final step to setting up your projects is to allow [Documenter.jl](https://github.com/JuliaDocs/Documenter.jl) to build your documentation and host it on [GitHub Pages](https://pages.github.com).
-For this purpose, install [DocumenterTools.jl](https://github.com/JuliaDocs/DocumenterTools.jl) in a temporary environment and run:
-
-```julia 
-DocumenterTools.genkeys(user="YourGitHubUsername", repo="MyPackage.jl")
-```
-
-This will generate and print two keys, with instruction on how to add them to GitHub.
-
 ## Suggested workflow
 
 There is no right or wrong way to use Git. 
