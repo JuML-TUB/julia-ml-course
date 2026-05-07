@@ -307,9 +307,10 @@ task(
     md"Define your own `MyDense` layer that reimplements Flux's `Dense` layer:
 1. Define a struct `MyDense` that holds an activation function `σ`, a `weight` matrix and a `bias` vector.
 1. Define an inner constructor that checks whether the shapes of the weights and biases match. The default activation function should be `identity`.
-1. Define an outer constructor that takes a `Pair` of input and output shapes,
-    replicating Flux's syntax `Dense(in => out)`.
+1. Define an outer constructor that takes a `Pair` of input and output shapes, and an optional activation function `σ`,
+    replicating Flux's syntax `Dense(in => out, σ=identity)`. 
     Use `glorot_uniform` to initialize the weight matrix and `zeros(Float32, size)` for the bias vector.
+	(Note: You need the optional argument for the next part of the exercise when you need to use a different activation function)
 1. Define a function `(d::MyDense)(x)` that computes the output of the Dense layer given an input batch `x`.
 
 Pluto will require these function to be written in one `begin ... end` block.
