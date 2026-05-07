@@ -236,11 +236,13 @@ else
             keep_working(md"Did you forget to write `return` in the outer constructor?")
         elseif ismissing(dtt2)
             still_missing(md"Replace `missing` in the outer constructor with your answer.")
-        elseif !(dtt2.μ ≈ 3.3333333333333335)
+        elseif !(hasfield(Standardize, :mean) && hasfield(Standardize, :std))
+            keep_working(md"`Standardize` should have two fields called `mean` and `std`.")
+        elseif !(dtt2.mean ≈ 3.3333333333333335)
             keep_working(
                 md"The answer is not quite right. The mean `μ` wasn't computed correctly in the outer constructor.",
             )
-        elseif !(dtt2.σ ≈ 2.081665999466133)
+        elseif !(dtt2.std ≈ 2.081665999466133)
             keep_working(
                 md"The answer is not quite right. The standard deviation `σ` wasn't computed correctly in the outer constructor.",
             )
