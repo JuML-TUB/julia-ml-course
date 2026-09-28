@@ -47,13 +47,13 @@ html"""
 			Homework 3: Custom types
 		</p>
 		<p style="font-size: 20px;">
-			TU Berlin, Summer Semester 2026<br>
+			TU Berlin, Winter Semester 26/27<br>
 		</p>
 	</div>
 """
 
 # ╔═╡ bdcb27c5-0603-49ac-b831-d78c558b31f0
-md"Due date: **Monday, May 11th 2026 at 23:59**"
+md"Due date: **Monday, November 11th 2026 at 23:59**"
 
 # ╔═╡ ddd6e83e-5a0d-4ff0-afe4-dedfc860994c
 md"### Student information"
