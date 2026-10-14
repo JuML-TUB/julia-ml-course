@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.24
+# v1.0.4
 
 using Markdown
 using InteractiveUtils
@@ -920,7 +920,7 @@ md"### Visualization of PCA"
 md"""
 The following visualization will help you verify your `pca` implementation.
 1. Make sure that the vectors $w_1$ and $w_2$ are orthogonal.
-2. The produced plot should look similar, with minute differences, to the example image given in the task description.
+2. The produced plot should look similar, with only minute differences, to the example image: the arrows represent the first and second principal component, and their coloring distinguishes the two.
 """
 
 # ╔═╡ f3d0483f-ba78-4d3d-a23e-ec051923175d

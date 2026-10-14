@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.24
+# v1.0.4
 
 using Markdown
 using InteractiveUtils
@@ -631,8 +631,8 @@ Since we haven't learned how to define our own types yet (look forward to lectur
 # ╔═╡ 0fff4cd1-8972-4aaf-85d5-6515404b8b86
 task(
     "Write a function `get_transformations` that takes a data vector `data` and returns two functions:
-1. A function `transform` implementing standardization with the mean and standard deviation of `data`
-2. A function `inverse_transform` implementing the inverse of standardization with the mean and standard deviation of `data`
+1. A function `transform` implementing standardization of the vector `xs`, using the mean and standard deviation computed from `data`
+2. A function `inverse_transform` implementing the inverse of that standardization, using the same mean and standard deviation as the `transform` function
 ",
     2,
 )

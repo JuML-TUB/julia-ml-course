@@ -1,5 +1,5 @@
 ### A Pluto.jl notebook ###
-# v0.20.24
+# v1.0.4
 
 using Markdown
 using InteractiveUtils
@@ -122,6 +122,17 @@ glorot_uniform(3, 5)
 # ╔═╡ af7305fa-c2ae-4040-b3c6-658c3b886081
 md"### Exercise 1.1 – Dense layer"
 
+# ╔═╡ 4dd5a128-6725-4f34-8995-3a4f1866f497
+# You can write you code here 
+
+# ╔═╡ 1b5e8453-bf8c-4344-b068-417772c8893c
+tip(
+    md"""You can add a new cell in two ways:
+- Click the `+` in the left margin between two cells.
+- Press `Ctrl+Enter` (`Cmd+Enter` on macOS) while editing a cell. This runs the cell and inserts a new one below.
+""",
+)
+
 # ╔═╡ b06457a9-3574-4c32-b961-7baad0b15eb3
 md"### Exercise 1.2 – Flux models"
 
@@ -130,6 +141,9 @@ md"The following line of code registers your custom layer type for use with Flux
 
 # ╔═╡ b8fff122-f50f-4c4f-a1fc-4c78adffdd55
 md"This allows Flux to see the parameters in your layer when calling `Flux.trainable`."
+
+# ╔═╡ 49c8b388-0cd2-4d5a-90b6-7113af864189
+model = missing # replace missing with your code
 
 # ╔═╡ 03cc579b-4b88-410e-8495-b64abc45de38
 md"### Interlude – Loading the Fashion-MNIST dataset
@@ -222,6 +236,9 @@ md"
         ],
     ),
 )
+
+# ╔═╡ a25cffa5-2cc7-44bc-99d2-08d73b7a7fe1
+# You can write your code here 
 
 # ╔═╡ 67739adb-289c-42cc-a714-bc5f3c25b63b
 md"""## Exercise 2 – Automatic differentiation
@@ -2794,10 +2811,13 @@ version = "1.13.0+0"
 # ╠═b7943bd4-eeb6-4f1c-91c9-871498c676b6
 # ╟─af7305fa-c2ae-4040-b3c6-658c3b886081
 # ╟─ed505128-7adc-4a4c-a27f-2e1f3229fa14
+# ╠═4dd5a128-6725-4f34-8995-3a4f1866f497
+# ╟─1b5e8453-bf8c-4344-b068-417772c8893c
 # ╟─b06457a9-3574-4c32-b961-7baad0b15eb3
 # ╟─985887e1-0053-4144-b928-928613270084
 # ╟─b8fff122-f50f-4c4f-a1fc-4c78adffdd55
 # ╟─deabad72-32ff-4781-b269-5a514828742d
+# ╠═49c8b388-0cd2-4d5a-90b6-7113af864189
 # ╟─03cc579b-4b88-410e-8495-b64abc45de38
 # ╠═8fadcaf7-841f-4670-b7cf-ab6658feaa15
 # ╠═627c27b1-ff1a-48eb-91ba-285d80a88975
@@ -2816,6 +2836,7 @@ version = "1.13.0+0"
 # ╠═fe22ab4f-6119-4397-ac25-ce840a176777
 # ╟─ae26551a-d4dd-4b37-a02d-a089de359f70
 # ╟─207136c1-528f-4f78-84e2-a20f1985092e
+# ╠═a25cffa5-2cc7-44bc-99d2-08d73b7a7fe1
 # ╟─67739adb-289c-42cc-a714-bc5f3c25b63b
 # ╟─97beac12-3f37-4876-8ae7-b07c2c4975fd
 # ╠═297892b3-5385-4391-a0e8-849cbbff271c
