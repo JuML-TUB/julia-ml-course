@@ -108,7 +108,7 @@ If you do not register on time, you cannot pass the course.
 ![JuML course timeline](/assets/timeline.png)
 
 * **Course Period:**  October 12th 2026 - February 12th 2027
-  * **Kick-off meeting:** Thursday, October 12th, 14:15-15:45, MAR 0.016
+  * **Kick-off meeting:** Thursday, October 15th, 14:15-15:45, MAR 0.016
   * **Project meetings:** Thursdays, 14:15-15:45, MAR 0.016
   * **Office hours:** TBA
 
@@ -122,7 +122,7 @@ Attendance is mandatory for lectures on the following dates:
 
 The date of the final examination will be determined on a group-by-group basis.
 
-More information can be found on [ISIS](https://isis.tu-berlin.de/).
+More information can be found on [ISIS](https://isis.tu-berlin.de/course/view.php?id=49892).
 
 ## FAQ
 #### Why should I learn Julia?
