@@ -54,7 +54,7 @@ html"""
 """
 
 # ╔═╡ bdcb27c5-0603-49ac-b831-d78c558b31f0
-md"Due date: **Monday, November 4th 2026 at 23:59**"
+md"Due date: **Wednesday, November 4th 2026 at 23:59**"
 
 # ╔═╡ ddd6e83e-5a0d-4ff0-afe4-dedfc860994c
 md"### Student information"
