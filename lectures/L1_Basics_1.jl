@@ -733,7 +733,7 @@ which defaults to the $\ell^2$-norm using $p=2$:
 
 # ╔═╡ 89f79535-2681-4a93-a80f-28f74f22be0c
 function my_norm(xs, p=2)
-    return sum(xs .^ p)^(1 / p)
+    return sum(abs.(xs) .^ p)^(1 / p)
 end
 
 # ╔═╡ cd0ef716-5f6e-478e-a45c-536ff93ae82d
